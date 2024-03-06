@@ -5,7 +5,7 @@ const Home = async () => {
   const snippets = await db.snippet.findMany({
     where: {
       title: {
-        contains: "a",
+        contains: "",
       },
     },
   });
